@@ -51,11 +51,15 @@
 // makeWordCounts: Given a vector of (non-unique) strings, returns a
 // StringIntMap where each string is mapped to its number of occurences.
 StringIntMap makeWordCounts(const StringVec& words) {
+
   StringIntMap wordcount_map;
 
-  // =================================================
-  // EXERCISE 1 WORKSPACE: YOUR CODE HERE
-  // =================================================
+  for (auto w : words) {
+    if (wordcount_map.count(w)) { 
+      wordcount_map[w]++;
+    }
+    else wordcount_map[w];
+  }
 
   return wordcount_map;
 }
