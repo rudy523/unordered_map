@@ -318,6 +318,7 @@ int memoizedLongestPalindromeLength(LengthMemo& memo, const std::string& str, in
   // =======================================================================
   // EXERCISE 3 - PART B - YOUR CODE HERE!
   //
+  memo[pairKey] = greaterResult;
   return greaterResult; // Hint: You need to change this!
   // =======================================================================
 }
