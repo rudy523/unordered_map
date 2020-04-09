@@ -56,7 +56,7 @@ StringIntMap makeWordCounts(const StringVec& words) {
 
   for (auto w : words) {
     if (wordcount_map.count(w)) wordcount_map[w]++;
-    else { wordcount_map[w]; wordcount_map[w] = 1; }
+    else { wordcount_map[w] = 1; }
   }
   return wordcount_map;
 }
